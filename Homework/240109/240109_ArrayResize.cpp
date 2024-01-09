@@ -63,21 +63,31 @@ public:
 
     void ReSize(int _Size)
     {
+
         if (0 >= _Size)
         {
             MsgBoxAssert("배열의 크기가 0일수 없습니다");
         }
 
+
+        int* Ptr = ArrPtr;
+        // ArrPtr [0][1][2][3][4]
+        ArrPtr = new int[_Size];
+
+        if (nullptr != Ptr)
+        {
+            for (int i = 0; i < NumValue ; i++)
+            {
+                ArrPtr[i] = Ptr[i];
+            }
+           
+            delete[] Ptr;
+        }
+        
         NumValue = _Size;
 
-        if (nullptr != ArrPtr)
-        {
-            Release();
-        }
-
-        ArrPtr = new int[_Size];
     }
-
+        
     void Release()
     {
         if (nullptr != ArrPtr)
@@ -90,6 +100,7 @@ public:
 private:
     int NumValue = 0;
     int* ArrPtr = nullptr;
+    int* Ptr = nullptr;
 };
 
 
