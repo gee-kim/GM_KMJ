@@ -235,7 +235,7 @@ int main()
 
 	{
 		std::cout << "내 리스트" << std::endl;
-		MyList::reverse_iterator NewList = MyList::reverse_iterator();
+		MyList NewList = MyList();
 		// 0, 1, 2, 3, 4
 		for (int i = 0; i < 5; i++)
 		{
@@ -244,7 +244,7 @@ int main()
 		}
 
 		MyList::reverse_iterator rStartIter = NewList.rbegin();
-		std::list<int>::reverse_iterator rEndIter = NewList.rend();
+		MyList::reverse_iterator rEndIter = NewList.rend();
 
 		for (/*std::list<int>::iterator StartIter = NewList.begin()*/
 			; rStartIter != rEndIter
