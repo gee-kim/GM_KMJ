@@ -85,5 +85,4 @@ void Head::Update()
 		BodyManager::ResetBody();
 	}
 	
-
 }
