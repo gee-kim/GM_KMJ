@@ -75,6 +75,8 @@ void Head::Update()
 		return;
 	}
 
+	int a = 10;
+
 	Body* CurBody = BodyManager::GetCurBody();
 
 	if (CurBody->GetPos() == GetPos())
@@ -83,6 +85,14 @@ void Head::Update()
 		this->Back = CurBody;
 		CurBody->SetPos(PrevPos);
 		BodyManager::ResetBody();
+
+		//head->back->back->back->
+
+	}
+
+	if (nullptr != Back)
+	{
+		Back->SetPos(PrevPos);
 	}
 	
 
