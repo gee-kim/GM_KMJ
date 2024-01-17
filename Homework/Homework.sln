@@ -12,7 +12,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "240111_RList", "240111_RLis
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "240109_ArrayResize", "240109_ArrayResize\240109.vcxproj", "{34BAF5FD-B9CD-4842-B990-5F9125EF50B0}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "240116_SnakeGame", "240116_SnakeGame\SnakeGame.vcxproj", "{CD4CBD5A-1214-415F-85DB-AC4875A53A39}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "240116_SnakeTest", "240116_SnakeTest\SnakeGame.vcxproj", "{CD4CBD5A-1214-415F-85DB-AC4875A53A39}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
